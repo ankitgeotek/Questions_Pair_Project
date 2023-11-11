@@ -5,7 +5,7 @@ from fuzzywuzzy import fuzz
 import pickle
 import numpy as np
 
-cv = pickle.load(open(r'A:\Work Docs\Data Analyst work\Campus X\10_Streamlit\04_Quora_Question_Pair\cv.pkl','rb'))
+cv = pickle.load(open('cv.pkl','rb'))
 
 
 def test_common_words(q1,q2):

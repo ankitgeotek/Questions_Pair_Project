@@ -7,7 +7,7 @@ import pickle
 
 
 
-model = pickle.load(open(r'A:\Work Docs\Data Analyst work\Campus X\10_Streamlit\04_Quora_Question_Pair\model.pkl','rb'))
+model = pickle.load(open('model.pkl','rb'))
 
 st.header('Duplicate Question Pairs')
 
