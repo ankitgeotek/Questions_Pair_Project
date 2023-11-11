@@ -5,6 +5,14 @@ from fuzzywuzzy import fuzz
 import pickle
 import numpy as np
 
+import nltk
+
+try:
+    nltk.data.find('corpora/stopwords.zip')
+except LookupError:
+    nltk.download('stopwords')
+
+
 cv = pickle.load(open('cv.pkl','rb'))
 
 
